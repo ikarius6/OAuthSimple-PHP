@@ -111,8 +111,8 @@
         function setTokensAndSecrets($signatures) {
             if ($signatures)
             {
-                foreach($signatures as $signature) {
-                    $this->_secrets[i] = $signature;
+                foreach($signatures as $i=>$signature) {
+                    $this->_secrets[$i] = $signature;
 				}
             }
             // Aliases
