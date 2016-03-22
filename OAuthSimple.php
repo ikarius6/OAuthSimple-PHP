@@ -11,7 +11,7 @@
         private $_action = "GET";
         private $_nonce_chars = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
 
-		function __construct($consumer_key, $shared_secret){
+		function __construct($consumer_key="", $shared_secret=""){
 			if (!empty($consumer_key)) {
 				$this->_secrets['consumer_key'] = $consumer_key; 
             }
